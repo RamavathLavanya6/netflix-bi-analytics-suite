@@ -1,5 +1,7 @@
 # Netflix Ultimate BI Analytics Suite 📺
 
+[![Live App](https://img.shields.io/badge/Live-Demo-red?style=for-the-badge&logo=streamlit)](https://netflix-bi-analytics-suite-bpplgi7vs32sop2frnffuj.streamlit.app/)
+
 A premium, enterprise-grade Business Intelligence and Data Analytics dashboard for exploring Netflix catalog data, built using **Streamlit** and **Plotly**.
 
 This suite enables administrators and business analysts to manipulate worldwide catalog distributions, analyze ingest goals, track operational trends over time, partition content structural hierarchies, and trace global GIS spatial patterns.
