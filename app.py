@@ -91,6 +91,11 @@ filtered_df = df[df['country'].isin(selected_country)]
 if selected_type != "All":
     filtered_df = filtered_df[filtered_df['type'] == selected_type]
 
+# Handle empty state gracefully
+if filtered_df.empty:
+    st.warning("⚠️ No data available matching the selected filters. Please select at least one Territory or adjust the Content Segment Focus in the sidebar.")
+    st.stop()
+
 # Target for Gauge metric simulation
 TARGET_INVENTORY = 1500
 
@@ -251,7 +256,7 @@ with tab3:
 
     st.markdown("### Multi-Dimensional Master Matrix Ledger")
     matrix_df = filtered_df.pivot_table(index='country', columns='rating', values='year_added', aggfunc='count', fill_value=0)
-    st.dataframe(matrix_df.style.background_gradient(cmap='Reds'), use_container_width=True)
+    st.dataframe(matrix_df.style.background_gradient(cmap='Reds'), width="stretch")
 
 # ------------------------------------------
 # TAB 4: GEOGRAPHIC MAP MAPS SYSTEM
