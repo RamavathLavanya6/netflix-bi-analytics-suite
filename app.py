@@ -148,7 +148,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # TAB 1: CORE TRENDS (BAR, COLUMN, LINE, COMBO, RIBBON)
 # ------------------------------------------
 with tab1:
-    st.markdown("<h3 class='section-header'>Bar, Column, Line, Combo & Ribbon Charting Matrix</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'></h3>", unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
@@ -185,7 +185,7 @@ with tab1:
 # TAB 2: PART-TO-WHOLE & PROCESS FLOWS (PIE, DONUT, TREEMAP, WATERFALL)
 # ------------------------------------------
 with tab2:
-    st.markdown("<h3 class='section-header'>Hierarchies, Structural Partitions & Pipelines</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'></h3>", unsafe_allow_html=True)
     
     col_t2_1, col_t2_2 = st.columns(2)
     
@@ -227,7 +227,7 @@ with tab2:
 # TAB 3: RELATIONSHIPS, SCATTERS & DECOMPOSITION TREES
 # ------------------------------------------
 with tab3:
-    st.markdown("<h3 class='section-header'>Relationships, Clustering & Multi-Dimensional Deep Dives</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'></h3>", unsafe_allow_html=True)
     
     col_t3_1, col_t3_2 = st.columns([1.5, 1])
     
@@ -257,7 +257,7 @@ with tab3:
 # TAB 4: GEOGRAPHIC MAP MAPS SYSTEM
 # ------------------------------------------
 with tab4:
-    st.markdown("<h3 class='section-header'>Global Geographic GIS Spatial Matrix</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'></h3>", unsafe_allow_html=True)
     
     geo_df = filtered_df.groupby('country').size().reset_index(name='Asset Density')
     
